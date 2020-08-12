@@ -3,47 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>タケトモのサイト</title>
-    <link rel="icon" href="images/tt.png">
+    <title>taketomo</title>
+    <link rel="icon" href="images/T_logo.png">
     <link rel="stylesheet" href="index.css" type="text/css">
 </head>
 <body>
+    <header>
+        <div class="header_all">
+            <div class="headline">
+                <a href="index.html">
+                    <img src="images/logo_TaTo.png">
+                </a>
+            </div>
+            <div class="head_margin"></div>
+            <div class="head_cont">
+                <a href="bio.html">bio</a>
+            </div>
+            <div class="head_cont">/</div>
+            <div class="head_cont">
+                <a href="studying.html">studying</a>
+            </div>
+            <div class="head_cont">/</div>
+            <div class="head_cont">
+                <a href="favorite.html">favorite</a>
+            </div>
+            <div class="head_cont">/</div>
+            <div class="head_cont">
+                <a href="contact.html">contact</a>
+            </div>
+        </div>
+        <div id="nav-drawer">
+            <div class="top-mark1">
+                <input id="nav-input" type="checkbox" class="nav-unshown">
+                <label id="nav-open" for="nav-input"><span></span></label>
+                <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+                <div id="nav-content">
+                    <div class="middle-content">
+                        <ul>
+                            <li><a href="bio.html">bio</a></li>
+                            <li><a href="studying.html">studying</a></li>
+                            <li><a href="favorite.html">favorite</a></li>
+                            <li><a href="contact.html">contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="top-mark2">
+                <img src="images/logo_TaTo.png">
+            </div>
+        </div>
+        <hr size="5"  color="black" noshade>
+    </header>
     <main>
         <div class="grid_test">
             <div class="grid_test-child">
-                <div class="hp_main" id="hp_main">
-                    <img src="images/taketomo.png" title="HP main">
+                <a href="bio.html" id="btn0">
+                    <img src="images/bio_logo.png" title="bio">
+                    <h1>bio</h1>
+                </a>
+                <div class="comment">
+                    <p id="element0">自己紹介と略歴</p>
                 </div>
             </div>
             <div class="grid_test-child">
-                <a href="profile.html">
-                    <img src="images/profile.png" title="profile">
-                    <h1>profile</h1>
+                <a href="studying.html" id="btn1">
+                    <img src="images/study_logo.png" title="studying">
+                    <h1>studying</h1>
                 </a>
+                <p id="element1" class="comment">学んでいること</p>
             </div>
             <div class="grid_test-child">
-                <a href="picture.html">
-                    <img src="images/picture.png" title="picture">
-                    <h1>picture</h1>
+                <a href="favorite.html" id="btn2">
+                    <img src="images/favorite_logo.png" title="favorite">
+                    <h1>favorite</h1>
                 </a>
+                <p id="element2" class="comment">思い出の写真</p>
             </div>
             <div class="grid_test-child">
-                <img src="images/music.png" title="music">
-                <h1>music</h1>
-            </div>
-            <div class="grid_test-child">
-                <img src="images/place.png" title="place">
-                <h1>place</h1>
-            </div>
-            <div class="grid_test-child">
-                <img src="images/others.png" title="others">
-                <h1>others</h1>
+                <a href="contact.html" id="btn3">
+                    <img src="images/contact_logo.png" title="contact">
+                    <h1>contact</h1>
+                </a>
+                <p id="element3" class="comment">SNSやお問い合わせ<br>はこちらから</p>
             </div>
         </div>
     </main>
     <footer>
         <h1>taketomo.tech</h1>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="index.js"></script>
 </body>
 </html>
